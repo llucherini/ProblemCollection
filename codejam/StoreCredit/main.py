@@ -17,12 +17,12 @@ if __name__ == "__main__":
     import sys
     
     n_tests = int(sys.stdin.readline().strip())
-    for n in xrange(n_tests):
+    for n in range(n_tests):
         credit = int(sys.stdin.readline().strip())
         n_items = int(sys.stdin.readline().strip())
         items = [int(x) for x in sys.stdin.readline().strip().split(' ')]
 
         assert n_items == len(items)
         p1, p2 = solve(credit, items)
-        print "Case #%d: %d %d" % (n+1, p1+1, p2+1)
+        print("Case #{:d}: {:d} {:d}".format(n+1, p1+1, p2+1))
         

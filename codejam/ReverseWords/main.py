@@ -6,8 +6,8 @@ if __name__ == "__main__":
     import sys
     
     n_tests = int(sys.stdin.readline().strip())
-    for n in xrange(n_tests):
+    for n in range(n_tests):
         words = sys.stdin.readline().strip().split(' ')
 
-        print "Case #%d: %s" % (n+1, ' '.join(reversed(words)))
+        print("Case #{:d}: {}".format(n+1, ' '.join(reversed(words))))
         
