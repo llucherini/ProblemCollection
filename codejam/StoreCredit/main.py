@@ -1,6 +1,8 @@
+# Google Code Jam - Store Credit
+# http://code.google.com/codejam/contest/351101/dashboard for more information
+
 def solve(credit, items):
-    """Looks for the two matching integers that add up to the credit provided, and returns their position.
-    Visit http://code.google.com/codejam/contest/351101/dashboard for more information"""
+    """Looks for the two matching integers that add up to the credit provided, and returns their position."""
 
     # By knowing the target credit, for each integer i already know what i need to look for.
     # Keeping track of them with a dictionary allows me to quickly recognise if i have found
